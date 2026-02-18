@@ -1,0 +1,98 @@
+.configs-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  width: 100%;
+  max-width: 1400px;
+}
+
+.loading,
+.no-data {
+  text-align: center;
+  padding: 40px;
+  font-size: 16px;
+  color: #666;
+}
+
+.configs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 40px;
+  width: 100%;
+}
+
+.config-card {
+  border: 2px solid #fff;
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
+}
+
+.config-card:hover {
+  background-color: #111;
+}
+
+.config-card-header {
+  padding: 25px;
+  border-bottom: 1px solid #fff;
+}
+
+.config-card-header h2 {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 24px;
+  margin: 0;
+  font-weight: bold;
+}
+
+.config-card-body {
+  padding: 25px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.config-full-name {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+  margin: 0;
+  color: #fff;
+}
+
+.config-last-updated {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px;
+  margin: 0;
+  color: #888;
+  line-height: 1.5;
+}
+
+.config-card-footer {
+  padding: 20px 25px;
+  border-top: 1px solid #fff;
+}
+
+.config-download-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  font-size: 14px;
+  font-family: 'Courier New', Courier, monospace;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.config-download-btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+@media (max-width: 768px) {
+  .configs-grid {
+    grid-template-columns: 1fr;
+  }
+}

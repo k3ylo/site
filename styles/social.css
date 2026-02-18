@@ -1,0 +1,89 @@
+.social-container {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.social-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 40px;
+  width: 100%;
+}
+
+.social-card {
+  border: 2px solid #fff;
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.social-card:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.social-card-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 30px;
+  border-bottom: 1px solid #fff;
+}
+
+.social-card-icon {
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+}
+
+.social-card-header h2 {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 24px;
+  margin: 0;
+  font-weight: bold;
+}
+
+.social-card-body {
+  padding: 30px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.social-description {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.social-link-text {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px;
+  margin: 0;
+  color: #888;
+  word-break: break-all;
+}
+
+.social-card-footer {
+  padding: 20px 30px;
+  border-top: 1px solid #fff;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.social-action {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .social-grid {
+    grid-template-columns: 1fr;
+  }
+}
